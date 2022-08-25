@@ -74,11 +74,6 @@ class LoadingButton @JvmOverloads constructor(
 
     init {
         buttonTitle = "Download"
-//        context.withStyledAttributes(attrs, R.styleable.LoadingButton){
-//            buttonColor = getColor(R.styleable.LoadingButton_buttonColor, 0)
-//            loadingColor = getColor(R.styleable.LoadingButton_buttonLoadingColor, 0)
-//            circleColor = getColor(R.styleable.LoadingButton_loadingCircleColor, 0)
-//        }
     }
 
 

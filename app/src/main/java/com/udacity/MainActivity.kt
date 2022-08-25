@@ -45,9 +45,12 @@ class MainActivity : AppCompatActivity() {
         registerReceiver(receiver, IntentFilter(DownloadManager.ACTION_DOWNLOAD_COMPLETE))
 
         custom_button.setOnClickListener {
+            println("click")
             if (this::selectedDownloadUri.isInitialized){
-                        custom_button.buttonState = ButtonState.Loading
+                 custom_button.buttonState = ButtonState.Loading
                         download()
+            }else{
+                 Toast.makeText(this, R.string.alert_no_select,Toast.LENGTH_SHORT).show()
             }
         }
         optionGroup.setOnCheckedChangeListener { radioGroup, i ->
